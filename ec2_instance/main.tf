@@ -34,7 +34,7 @@ instance_type = "t2.micro"
 key_name = "lab1"
 vpc_security_group_ids = [aws_security_group.web_sg.id]
 tags = {
-"Name" = "New webserver"
+"Name" = "New webserver2"
 }
 
 user_data = <<-EOF
@@ -49,7 +49,7 @@ EOF
 
 # Security group
 resource "aws_security_group" "web_sg" {
-name = "Ec2 instance sg"
+name = "Ec2 instance sg2"
 
 ingress {
 from_port = 80
