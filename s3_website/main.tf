@@ -38,10 +38,11 @@ resource "aws_s3_bucket_website_configuration" "website_config" {
     key = "error.html"
   }
 }
-
 resource "aws_s3_bucket_policy" "allow_access" {
   bucket = aws_s3_bucket.website.id
   policy = data.aws_iam_policy_document.allow_access.json
+
+  depends_on = [aws_s3_bucket_public_access_block.website]
 }
 
 data "aws_iam_policy_document" "allow_access" {
