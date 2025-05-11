@@ -14,7 +14,7 @@ region = "us-east-1"
 
 # Creating bucket
 resource "aws_s3_bucket" "website" {
-bucket = "buackettrrrrrvasdf"
+bucket = "my-buck439777892225"
 
 tags = {
 Name = "Website"
