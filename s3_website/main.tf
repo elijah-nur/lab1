@@ -10,9 +10,7 @@ version = "~> 4.0"
 # Configure AWS provider and creds
 provider "aws" {
 region = "us-east-1"
-shared_config_files = ["C:/Users/Elijah/.aws/config"]
-shared_credentials_files = ["C:/Users/Elijah/.aws/credentials"]
-profile = "default"
+
 }
 
 # Creating bucket
