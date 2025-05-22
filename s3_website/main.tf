@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "website" {
-  bucket = "my-buck-elijah-202505111237"
+  bucket = "elijah-bucket-lb"
 
   tags = {
     Name        = "Website"
